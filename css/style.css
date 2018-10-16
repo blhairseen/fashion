@@ -1,0 +1,131 @@
+body{
+	background: #C0c0c0;
+}
+.header{
+	text-align: center;
+	font-family: sans-serif, verdana, arial;
+	font-weight: bolder;
+}
+#pic1{
+	height: 100%;
+	width: 100%;
+
+}
+.wrapper{
+	display: grid;
+	grid-template-columns: 35% 30% 30%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em; 
+}
+
+/*Strip ul of padding and list styling*/
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+/*Create a horizontal list with spacing*/
+li {
+	display: inline-block;
+	float: left;
+	margin-right: 1px;
+}
+/*Style for menu links*/
+li a{
+	display: block;
+	min-width: 150px;
+	max-width: 250px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: Helvetica, arial;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: inherit;
+}
+/*hover state for top level links*/
+li:hover a{
+	background: #ffffff; 
+	color: #000000;
+}
+/*style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3; 
+	color: #2f3036;
+	height: 40px;
+	line-height: 30px;
+}
+/*hover state for dropdown links*/
+li:hover ul a:hover{
+	background: #19c589;
+	color: #fff; 
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block; 
+}
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+#menu{
+	margin: auto;
+}
+.info{
+	margin: 5em;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: blue;
+}
+#pic2{
+ 	height: 90%;
+	width: 60%;
+}
+.wrap{
+	display: grid;
+	grid-template-columns: 35% 30% 30%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+}	
+#pic3{
+	height: 90%;
+	width: 60%;
+}
+.links {
+	text-decoration: none;
+	font-weight: bolder;
+	color: #121914;
+}
+.links:hover {
+	color: #0f6ab1;
+	text-decoration: underline;
+}
+#pic4{
+	height: 300px;
+	width: 250px;
+	}
+.wrap1{
+	display: flex;
+	flex-direction: row;
+	flex-basis: 30%;
+}
+.footer {
+	bottom: 0;
+	position: relative;
+}
